@@ -8,16 +8,23 @@ Credit to sktjdgns1189,jesec
 we both want to have an opensource device tree,so we will try our best.
 
 Status of the work:
-boot--yes
-ril--yes
-wifi--yes
-sensor--yes
-...
+
+  boot--yes
+
+  ril--yes
+
+  wifi--yes
+
+  sensor--yes
+  ...
 
 Bugs:
-nfc -- I will try to use samsung stock hal
-bluetooth -- had not take a look yet
-camere -- maybe I missed something in vendor
+
+  nfc -- I will try to use samsung stock hal
+
+  bluetooth -- had not take a look yet
+
+  camere -- maybe I missed something in vendor
 
 
 Kernel source :
