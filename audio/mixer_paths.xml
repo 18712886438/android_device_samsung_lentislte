@@ -839,13 +839,13 @@
 
 	<path name="rec-sub-mic">
 		<path name="sub-mic" />
-		<ctl name="DEC4 Volume" value="106" />
+		<ctl name="DEC4 Volume" value="91" />
 	</path>
 
 	<path name="rec-headset-mic">
 		<path name="ear-mic" />
-		<ctl name="ADC2 Volume" value="130" />
-		<ctl name="DEC5 Volume" value="150" />
+		<ctl name="ADC2 Volume" value="14" />
+		<ctl name="DEC5 Volume" value="72" />
 	</path>
 
 	<path name="rec-headset-mic-jam">
@@ -857,37 +857,37 @@
 	<path name="rec-stereo-mic">
 		<ctl name="Main Mic Delay" value="4" />
 		<path name="sub-main-mic" />
-		<ctl name="DEC2 Volume" value="170" />
-		<ctl name="DEC4 Volume" value="170" />
+		<ctl name="DEC2 Volume" value="90" />
+		<ctl name="DEC4 Volume" value="93" />
 	</path>
 
 	<path name="rec-high-gain-main-mic">
 		<path name="main-mic" />
-		<ctl name="DEC2 Volume" value="99" />
+		<ctl name="DEC2 Volume" value="84" />
 	</path>
 
 	<path name="rec-high-gain-sub-mic">
 		<path name="sub-mic" />
-		<ctl name="DEC4 Volume" value="99" />
+		<ctl name="DEC4 Volume" value="84" />
 	</path>
 
 	<path name="rec-high-gain-headset-mic">
 		<path name="ear-mic" />
-		<ctl name="ADC2 Volume" value="29" />
-		<ctl name="DEC5 Volume" value="99" />
+		<ctl name="ADC2 Volume" value="14" />
+		<ctl name="DEC5 Volume" value="84" />
 	</path>
 
 	<path name="rec-high-gain-stereo-mic">
 		<path name="sub-3rd-mic" />
-		<ctl name="DEC2 Volume" value="170" />
-		<ctl name="DEC4 Volume" value="170" />
+		<ctl name="DEC2 Volume" value="84" />
+		<ctl name="DEC4 Volume" value="84" />
 	</path>
 
 	<path name="rec-NS-mic-interview">
 		<ctl name="ES705 TX2 Enable" value="1" />
 		<path name="main-sub-mic" />
-		<ctl name="DEC2 Volume" value="90" />
-		<ctl name="DEC4 Volume" value="90" />
+		<ctl name="DEC2 Volume" value="84" />
+		<ctl name="DEC4 Volume" value="84" />
 		<ctl name="ES705-AP Tx Channels" value="One" />
 		<ctl name="Internal Route Config" value="7" />
 	</path>
@@ -895,16 +895,16 @@
 	<path name="rec-NS-mic-conversation">
 		<ctl name="ES705 TX2 Enable" value="1" />
 		<path name="main-sub-mic" />
-		<ctl name="DEC2 Volume" value="90" />
-		<ctl name="DEC4 Volume" value="90" />
+		<ctl name="DEC2 Volume" value="84" />
+		<ctl name="DEC4 Volume" value="84" />
 		<ctl name="ES705-AP Tx Channels" value="One" />
 		<ctl name="Internal Route Config" value="8" />
 	</path>
 
 	<path name="rec-NS-mic-conference">
 		<path name="main-sub-mic" />
-		<ctl name="DEC2 Volume" value="99" />
-		<ctl name="DEC4 Volume" value="99" />
+		<ctl name="DEC2 Volume" value="84" />
+		<ctl name="DEC4 Volume" value="84" />
 	</path>
 	<!-- end of Recording Scenario -->
 
@@ -912,60 +912,60 @@
 	<!-- recognition Scenario -->
 	<path name="vr-main-mic">
 		<path name="main-mic" />
-		<ctl name="DEC2 Volume" value="109" />
+		<ctl name="DEC2 Volume" value="106" />
 	</path>
 
 	<path name="vr-sub-mic">
 		<path name="sub-mic" />
-		<ctl name="DEC4 Volume" value="104" />
+		<ctl name="DEC4 Volume" value="101" />
 	</path>
 
 	<path name="vr-headset-mic">
 		<path name="ear-mic" />
-		<ctl name="ADC2 Volume" value="27" />
-		<ctl name="DEC5 Volume" value="100" />
+		<ctl name="ADC2 Volume" value="12" />
+		<ctl name="DEC5 Volume" value="84" />
 	</path>
 
 	<path name="bargein1-main-mic">
 		<path name="main-mic" />
-		<ctl name="DEC2 Volume" value="105" />
+		<ctl name="DEC2 Volume" value="89" />
 	</path>
 
 	<path name="bargein1-sub-mic">
 		<path name="sub-mic" />
-		<ctl name="DEC4 Volume" value="105" />
+		<ctl name="DEC4 Volume" value="96" />
 	</path>
 
 	<path name="bargein1-earphone-mic">
 		<path name="main-mic" />
-		<ctl name="DEC2 Volume" value="99" />
+		<ctl name="DEC2 Volume" value="84" />
 	</path>
 
 	<path name="bargein1-headset-mic">
 		<path name="ear-mic" />
-		<ctl name="ADC2 Volume" value="27" />
-		<ctl name="DEC5 Volume" value="99" />
+		<ctl name="ADC2 Volume" value="12" />
+		<ctl name="DEC5 Volume" value="84" />
 	</path>
 
 	<path name="bargein2-main-mic">
 		<path name="main-mic" />
-		<ctl name="DEC2 Volume" value="104" />
+		<ctl name="DEC2 Volume" value="89" />
 	</path>
 
 	<path name="bargein2-sub-mic">
 		<path name="sub-mic" />
-		<ctl name="DEC4 Volume" value="100" />
+		<ctl name="DEC4 Volume" value="96" />
 	</path>
 
 	<path name="bargein2-earphone-mic">
 		<path name="main-mic" />
-		<ctl name="DEC2 Volume" value="99" />
+		<ctl name="DEC2 Volume" value="84" />
 	</path>
 
 	<path name="bargein2-headset-mic">
 		<path name="ear-mic" />
-		<ctl name="ADC2 Volume" value="27" />
-		<ctl name="DEC5 Volume" value="99" />
+		<ctl name="ADC2 Volume" value="12" />
+		<ctl name="DEC5 Volume" value="84" />
 	</path>
 
 	<path name="svoice-main-mic">
