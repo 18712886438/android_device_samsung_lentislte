@@ -208,6 +208,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.apq8084
 
+# NFC HAL
+PRODUCT_PACKAGES += \
+    libpn547_fw
+
 # QCOM perf lib
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.extension_library=/vendor/lib/libqc-opt.so
