@@ -16,6 +16,9 @@ Status of the work:
   wifi--yes
 
   sensor--yes
+  
+  camera--yes
+  
   ...
 
 Bugs:
@@ -24,7 +27,6 @@ Bugs:
 
   bluetooth -- had not take a look yet
 
-  camere -- maybe I missed something in vendor
 
 
 Kernel source :
