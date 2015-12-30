@@ -1,3 +1,1 @@
-allow bluetooth wcnss_filter:unix_stream_socket connectto;
-allow bluetooth bluetooth_device:chr_file { open write };
 allow bluetooth proc_bluetooth_writable:dir search;
