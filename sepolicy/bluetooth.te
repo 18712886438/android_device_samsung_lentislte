@@ -1,1 +1,1 @@
-allow bluetooth proc_bluetooth_writable:dir search;
+allow bluetooth wcnss_filter:unix_stream_socket connectto;

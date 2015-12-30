@@ -440,23 +440,27 @@ etc/firmware/a420_pm4.fw
 etc/firmware/bdwlan20.bin
 etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
-etc/firmware/nvm_tlv_1.3.bin
-etc/firmware/nvm_tlv_2.1.bin
-etc/firmware/nvm_tlv_3.0.bin
-etc/firmware/nvm_tlv.bin
 etc/firmware/otp20.bin
 etc/firmware/qwlan20.bin
-etc/firmware/rampatch_tlv_1.3.tlv
-etc/firmware/rampatch_tlv_2.1.tlv
-etc/firmware/rampatch_tlv_3.0.tlv
-etc/firmware/rampatch_tlv.img
 etc/firmware/utf20.bin
 etc/firmware/utfbd20.bin
 
-# Add stuff missed
+# Bluetooth
+bin/btnvtool
 bin/hci_qcomm_init
-bin/radish
 bin/wcnss_filter
+etc/firmware/nvm_tlv.bin
+etc/firmware/nvm_tlv_1.3.bin
+etc/firmware/nvm_tlv_2.1.bin
+etc/firmware/nvm_tlv_3.0.bin
+etc/firmware/rampatch_tlv.img
+etc/firmware/rampatch_tlv_1.3.tlv
+etc/firmware/rampatch_tlv_2.1.tlv
+etc/firmware/rampatch_tlv_3.0.tlv
+vendor/lib/libbtnv.so
+
+# Add stuff missed
+bin/radish
 vendor/lib/libSubSystemShutdown.so
 vendor/lib/libsubsystem_control.so
 vendor/lib/libmmrtpdecoder.so
