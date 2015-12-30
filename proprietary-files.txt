@@ -344,9 +344,6 @@ vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxWmaDec.so
 
-# NFC
-lib/hw/nfc_nci.pn54x.default.so
-
 # Perf
 vendor/lib/libqc-opt.so
 
@@ -381,14 +378,6 @@ etc/hostapd/hostapd.accept
 etc/hostapd/hostapd_default.conf
 etc/hostapd/hostapd.deny
 
-
-# Bluetooth firmware
-#vendor/firmware/BT_FW_BCM4358A1_001.002.005.0032.0066.hcd
-#vendor/firmware/bcm43569.hcd
-#vendor/firmware/bcm43569A0.hcd
-#vendor/firmware/bcm43569A1.hcd
-
-
 # GPS
 app/com.qualcomm.location/com.qualcomm.location.apk
 #bin/gsiff_daemon
@@ -400,9 +389,6 @@ vendor/lib/libizat_core.so
 vendor/lib/liblbs_core.so
 vendor/lib/liblocationservice.so
 #vendor/lib/libulp2.so
-
-# NFC
-#vendor/firmware/sec_s3fwrn5_firmware.bin
 
 # Qualcomm framework
 vendor/lib/libdiag.so
