@@ -27,7 +27,8 @@ vendor/lib/libaudcal.so
 
 # Camera
 bin/mm-qcamera-daemon
-lib/hw/camera.apq8084.so:lib/hw/camera.vendor.apq8084.so
+lib/hw/camera.apq8084.so
+lib/hw/camera.vendor.apq8084.so
 lib/libarcsoft_nighthawk.so
 lib/libliveframework.so
 lib/libmmcamera2_stats_algorithm.so

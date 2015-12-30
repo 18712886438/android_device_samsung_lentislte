@@ -112,7 +112,15 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_PACKAGES += \
     camera.apq8084 \
+    camera.vendor.apq8084.so \
     libxml2
+
+# Filesystem management tools
+PRODUCT_PACKAGES += \
+    e2fsck \
+    make_ext4fs \
+    setup_fs
+
 # Charger
 PRODUCT_PACKAGES += \
     charger \
@@ -191,26 +199,29 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
 
-# NFC packages
-PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    NfcNci \
-    libnfc-nci \
-    Tag
-
-# NFC config
+# NFC
+ifeq ($(TARGET_BUILD_VARIANT),user)
+    NFCEE_ACCESS_PATH := $(LOCAL_PATH)/configs/nfcee_access.xml
+else
+    NFCEE_ACCESS_PATH := $(LOCAL_PATH)/configs/nfcee_access_debug.xml
+endif
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/libnfc-sec.conf:system/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/configs/libnfc-sec.conf:system/etc/libnfc-nxp.conf \
-    $(LOCAL_PATH)/configs/nfcee_access.xml:system/etc/nfcee_access.xml
+    $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
+
+PRODUCT_PACKAGES += \
+    NfcNci \
+    Tag \
+    nfc_nci.pn54x.default \
+    com.android.nfc_extras
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
+
 
 # Power HAL
 PRODUCT_PACKAGES += \
     power.apq8084
-
-# NFC HAL
-PRODUCT_PACKAGES += \
-    libpn547_fw
 
 # QCOM perf lib
 PRODUCT_PROPERTY_OVERRIDES += \
