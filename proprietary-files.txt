@@ -468,7 +468,6 @@ etc/firmware/utf20.bin
 etc/firmware/utfbd20.bin
 
 # Add stuff missed
-bin/btnvtool
 bin/hci_qcomm_init
 bin/radish
 bin/wcnss_filter
