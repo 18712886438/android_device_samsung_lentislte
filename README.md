@@ -18,14 +18,10 @@ Status of the work:
   sensor--yes
   
   camera--yes
-  
-  ...
 
-Bugs:
+  nfc --yes
 
-  nfc -- I will try to use samsung stock hal
-
-  bluetooth -- had not take a look yet
+  bluetooth -- yes
 
 
 
