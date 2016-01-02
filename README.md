@@ -27,7 +27,11 @@ Status of the work:
 
 Kernel source :
 
-https://github.com/sktjdgns1189/android_kernel_samsung_lentislte.git
+https://github.com/Dev-in-Advance/android_kernel_samsung_lentislte.git
+
+Vendor :
+
+https://github.com/Dev-in-Advance/android_vendor_samsung_lentislte.git
 
 
 
