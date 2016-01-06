@@ -25,8 +25,5 @@ TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_LIBINIT_DEFINES_FILE := device/samsung/trltetmo/init/init_trlte.cpp
 TARGET_UNIFIED_DEVICE := true
 
-# Radio
-BOARD_RIL_CLASS := ../../../device/samsung/trltetmo/ril
-
 # inherit from the proprietary version
 -include vendor/samsung/trltetmo/BoardConfigVendor.mk
