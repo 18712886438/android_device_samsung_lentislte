@@ -16,6 +16,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter lentislteskt lentisltekkt lentisltelgt,$(TARGET_DEVICE)),)
+ifneq ($(filter lentislte lentislteskt lentisltekkt lentisltelgt,$(TARGET_DEVICE)),)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
