@@ -56,7 +56,7 @@ import com.android.internal.telephony.uicc.IccCardStatus;
  * Handles most GSM and CDMA cases.
  * {@hide}
  */
-public class trlteRIL extends RIL implements CommandsInterface {
+public class lentislteRIL extends RIL implements CommandsInterface {
 
     private AudioManager mAudioManager;
 
@@ -71,12 +71,12 @@ public class trlteRIL extends RIL implements CommandsInterface {
     private static final int RIL_UNSOL_DEVICE_READY_NOTI = 11008;
     private static final int RIL_UNSOL_SRVCC_HANDOVER = 11029;
 
-    public trlteRIL(Context context, int preferredNetworkType, int cdmaSubscription) {
+    public lentislteRIL(Context context, int preferredNetworkType, int cdmaSubscription) {
         this(context, preferredNetworkType, cdmaSubscription, null);
         mAudioManager = (AudioManager)mContext.getSystemService(Context.AUDIO_SERVICE);
     }
 
-    public trlteRIL(Context context, int preferredNetworkType,
+    public lentislteRIL(Context context, int preferredNetworkType,
             int cdmaSubscription, Integer instanceId) {
         super(context, preferredNetworkType, cdmaSubscription, instanceId);
         mAudioManager = (AudioManager)mContext.getSystemService(Context.AUDIO_SERVICE);
