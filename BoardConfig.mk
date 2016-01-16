@@ -22,7 +22,7 @@ TARGET_KERNEL_VARIANT_CONFIG := apq8084_sec_trlte_tmo_defconfig
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/trltetmo/init/init_trlte.cpp
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/lentislte/init/init_lentislte.cpp
 TARGET_UNIFIED_DEVICE := true
 
 # Radio

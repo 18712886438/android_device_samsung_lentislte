@@ -29,7 +29,6 @@
 
 #include <stdlib.h>
 #include <stdio.h>
-
 #include "vendor_init.h"
 #include "property_service.h"
 #include "log.h"
@@ -61,23 +60,15 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 
     property_get("ro.bootloader", bootloader);
 
-    if (strstr(bootloader, "N910W8")) {
-        /* trltecan These values are taken from TMO and edited for the 910W8 FIXME */
-        property_set("ro.build.fingerprint", "samsung/trltevl/trltecan:6.0/MRA58K/N910W8UVU1ANIH:user/release-keys");
-        property_set("ro.build.description", "trltevl-user 6.0 MRA58K N910W8UVU1ANIH release-keys");
-        property_set("ro.product.model", "SM-N910W8");
-        property_set("ro.product.device", "trltecan");
+        property_set("ro.build.fingerprint", "samsung/lentislteskt/lentislteskt:6.0/MRA58K/G906SKSU1BOI5:user/release-keys");
+        property_set("ro.build.description", "lentislteskt-user 6.0 MRA58K G906SKSU1BOI5 release-keys");
+        property_set("ro.product.model", "SM-G906S");
+        property_set("ro.product.device", "lentislteskt");
         gsm_properties();
-    } else {
-        /* trltetmo */
-        property_set("ro.build.fingerprint", "samsung/trltetmo/trltetmo:6.0/MRA58K/N910TUVU1ANIH:user/release-keys");
-        property_set("ro.build.description", "trltetmo-user 6.0 MRA58K N910TUVU1ANIH release-keys");
-        property_set("ro.product.model", "SM-N910T");
-        property_set("ro.product.device", "trltetmo");
-        gsm_properties();
-    }
 
     property_get("ro.product.device", device);
     strlcpy(devicename, device, sizeof(devicename));
     INFO("Found bootloader id %s setting build properties for %s device\n", bootloader, devicename);
 }
+
+
