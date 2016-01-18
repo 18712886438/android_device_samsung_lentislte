@@ -19,6 +19,7 @@
 TARGET_OTA_ASSERT_DEVICE := lentislteskt,lentisltekkt,lentisltelgt
 
 # Kernel
+TARGET_ARCH := arm
 #TARGET_KERNEL_VARIANT_CONFIG := cm_lentislte_defconfig
 
 # Init
