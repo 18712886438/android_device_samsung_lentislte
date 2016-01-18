@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, device/samsung/lentislte/full_trltetmo.mk)
+$(call inherit-product, device/samsung/lentislte/full_lentislte.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
