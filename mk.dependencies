@@ -1,5 +1,9 @@
 [
   {
+    "repository": "android_vendor_samsung_lentislte",
+    "target_path": "vendor/samsung/lentislte"
+  },
+  {
     "repository": "android_device_samsung_lentislte-common",
     "target_path": "device/samsung/lentislte-common"
   }
