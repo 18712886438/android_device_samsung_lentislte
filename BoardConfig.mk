@@ -16,7 +16,7 @@
 # inherit from common trlte
 -include device/samsung/lentislte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := lentislteskt,lentisltekkt,lentisltelgt
+TARGET_OTA_ASSERT_DEVICE := lentislteskt,lentisltekkt,lentisltelgt,lentislte
 
 # Kernel
 TARGET_ARCH := arm
