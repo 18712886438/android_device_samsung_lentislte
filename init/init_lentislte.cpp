@@ -28,7 +28,7 @@
  */
 
 #include <stdlib.h>
-#include <stdio.h>
+
 #include "vendor_init.h"
 #include "property_service.h"
 #include "log.h"
@@ -60,15 +60,27 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 
     property_get("ro.bootloader", bootloader);
 
-        property_set("ro.build.fingerprint", "samsung/lentislteskt/lentislteskt:6.0/MRA58K/G906SKSU1BOI5:user/release-keys");
-        property_set("ro.build.description", "lentislteskt-user 6.0 MRA58K G906SKSU1BOI5 release-keys");
+    if (strstr(bootloader, "G906K")) {
+        property_set("ro.build.fingerprint", "samsung/lentisltektt/lentisltektt:6.0.1/LRX22C/G906KKTU1BOI5:user/release-keys");
+        property_set("ro.build.description", "lentisltektt-user 6.0.1 LRX22C G906KKTU1BOI5 release-keys");
+        property_set("ro.product.model", "SM-G906K");
+        property_set("ro.product.device", "lentisltektt");
+        gsm_properties();
+    } else if (strstr(bootloader, "G906S")) {
+        property_set("ro.build.fingerprint", "samsung/lentislteskt/lentislteskt:6.0.1/MRA58K/G906SKSU1BOI5:user/release-keys");
+        property_set("ro.build.description", "lentislteskt-user 6.0.1 MRA58K G906SKSU1BOI5 release-keys");
         property_set("ro.product.model", "SM-G906S");
         property_set("ro.product.device", "lentislteskt");
         gsm_properties();
+    } else {
+        property_set("ro.build.fingerprint", "samsung/lentisltelgt/lentisltelgt:6.0.1/KVT49L/G906LKLU1ANG8:user/release-keys");
+        property_set("ro.build.description", "lentisltelgt-user 6.0.1 KVT49L G906LKLU1ANG8 release-keys");
+        property_set("ro.product.model", "SM-G906L");
+        property_set("ro.product.device", "lentisltelgt");
+        gsm_properties();
+    }
 
     property_get("ro.product.device", device);
     strlcpy(devicename, device, sizeof(devicename));
     INFO("Found bootloader id %s setting build properties for %s device\n", bootloader, devicename);
 }
-
-
