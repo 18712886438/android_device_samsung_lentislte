@@ -20,7 +20,7 @@ TARGET_OTA_ASSERT_DEVICE := lentislteskt,lentisltektt,lentisltelgt,lentislte
 
 # Kernel
 TARGET_ARCH := arm
-#TARGET_KERNEL_VARIANT_CONFIG := cm_lentislte_defconfig
+TARGET_KERNEL_CONFIG := cm_lentislte_defconfig
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
