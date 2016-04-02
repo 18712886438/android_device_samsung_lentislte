@@ -5,7 +5,7 @@ vendor/lib/libconfigdb.so
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
 vendor/lib/libidl.so
-vendor/lib/libnetmgr.so
+#vendor/lib/libnetmgr.so
 vendor/lib/libqcci_legacy.so
 vendor/lib/libqmi.so
 vendor/lib/libqmi_cci.so
@@ -24,6 +24,7 @@ bin/mdm_helper
 bin/mdm_helper_proxy
 bin/qcks
 bin/qmuxd
+bin/radish
 #bin/rfs_access
 bin/rild
 #bin/rmt_storage
