@@ -23,8 +23,8 @@ TARGET_ARCH := arm
 TARGET_KERNEL_CONFIG := cm_lentislte_defconfig
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_msm
-TARGET_LIBINIT_DEFINES_FILE := device/samsung/lentislte/init/init_lentislte.cpp
+TARGET_INIT_VENDOR_LIB := libinit_lentislte
+TARGET_RECOVERY_DEVICE_MODULES := libinit_lentislte
 TARGET_UNIFIED_DEVICE := true
 
 # Radio
