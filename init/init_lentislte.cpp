@@ -34,6 +34,8 @@
 #include "log.h"
 #include "util.h"
 
+#define ISMATCH(a,b)    (!strncmp(a,b,PROP_VALUE_MAX))
+
 void gsm_properties()
 {
     property_set("telephony.lteOnGsmDevice", "1");
@@ -47,10 +49,6 @@ void vendor_load_properties(unsigned long msm_id, unsigned long msm_ver, char *b
     char device[PROP_VALUE_MAX];
     char devicename[PROP_VALUE_MAX];
     int rc;
-
-    UNUSED(msm_id);
-    UNUSED(msm_ver);
-    UNUSED(board_type);
 
     rc = property_get("ro.board.platform", platform);
     if (!rc || !ISMATCH(platform, ANDROID_TARGET))
