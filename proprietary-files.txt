@@ -1,6 +1,15 @@
+# GPS
+vendor/lib/hw/flp.default.so
+lib/libloc_api_v02.so
+vendor/lib/libgeofence.so
+vendor/lib/libizat_core.so
+vendor/lib/liblbs_core.so
+vendor/lib/liblocationservice.so
+vendor/lib/libulp2.so
+
 # Qualcomm framework
 vendor/lib/libmdmdetect.so
-vendor/lib/libperipheral_client.so
+#vendor/lib/libperipheral_client.so
 vendor/lib/libconfigdb.so
 vendor/lib/libdiag.so
 vendor/lib/libdsutils.so
@@ -15,6 +24,26 @@ vendor/lib/libqmi_csi.so
 #vendor/lib/libqmi_csvt_srvc.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
+vendor/lib/libflp.so
+#vendor/lib/libdataitems.so
+#vendor/lib/liblowi_client.so
+#lib/libagc_max.so
+lib/libqservice.so
+lib/libtinyxml.so
+lib/libqdutils.so
+lib/libjpegehw.so
+lib/libjpegdhw.so
+lib/libedmnativehelper.so
+lib/libcontrolcsc.so
+#lib/libcsc.so
+lib/libbt-iopdb.so
+lib/libbt-iopdb_mod.so
+lib/libbt-vendor.so
+lib/libbt-codec_aptx.so
+lib/libbt-aptX-ARM-4.2.2.so
+lib/libbt-codec_sshd.so
+lib/libshdace.so
+lib/libprotobuf-cpp-full.so
 
 # Radio
 bin/efsks
@@ -29,7 +58,7 @@ bin/radish
 bin/rild
 #bin/rmt_storage
 bin/rmnetcli
-lib/libmdmdetect.so
+#lib/libmdmdetect.so
 lib/libreference-ril.so
 lib/libril.so
 lib/librmnetctl.so
