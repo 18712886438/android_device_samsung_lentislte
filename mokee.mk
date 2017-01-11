@@ -16,9 +16,6 @@
 
 $(call inherit-product, device/samsung/lentislte/full_lentislte.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/mk/config/nfc_enhanced.mk)
-
 # Inherit common mk phone.
 $(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
