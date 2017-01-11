@@ -19,12 +19,8 @@
 TARGET_OTA_ASSERT_DEVICE := lentislteskt,lentisltektt,lentisltelgt,lentislte
 
 # Kernel
-TARGET_ARCH := arm
 TARGET_KERNEL_CONFIG := emotion_cm_defconfig
 
-# Init
-TARGET_INIT_VENDOR_LIB := libinit_lentislte
-TARGET_RECOVERY_DEVICE_MODULES := libinit_lentislte
 TARGET_UNIFIED_DEVICE := true
 
 # Radio
